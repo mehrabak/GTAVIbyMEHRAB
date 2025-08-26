@@ -33,24 +33,71 @@ function App(){
   });
    
   useGSAP(() => {
+
+    if(!showContent) return;
+    
+    gsap.to(".main",{ 
+       scale:1,
+       rotate:0,
+       duration:2,
+       delay:-1,
+       ease:"Expo.easeInOut",  
+    });
+
+    gsap.to(".sky",{ 
+       scale:1.1,
+       rotate:0,
+       duration:2,
+       delay:-0.8,
+       ease:"Expo.easeInOut",  
+    });
+
+
+     gsap.to(".bg",{ 
+       scale:1.1,
+       rotate:0,
+       duration:2,
+       delay:-0.8,
+       ease:"Expo.easeInOut",  
+    });
+
+  gsap.to(".character",{ 
+       scale:0.7,
+       x:"-50%",
+       rotate:0,
+       bottom:"-65%",
+       duration:2,
+       delay:-0.8,
+       ease:"Expo.easeInOut",  
+    });
+
+      gsap.to(".text",{ 
+       scale:1,
+       rotate:0,
+       duration:2,
+       delay:-0.8,
+       ease:"Expo.easeInOut",  
+    });
+
     const main = document.querySelector(".main");
 
     main?.addEventListener("mousemove",function(e){
-     const xMove = (e.clientX / window.innerWidth - .5) * 40;
-     gsap.to(".imagesdiv .text",{
-     x: `${xMove * 0.4}%`
+     const xMove = (e.clientX / window.innerWidth - 0.5) * 40;
+
+     gsap.to(".main .text",{
+     x: `${xMove * 0.4}%`,
      });
 
-
-     gsap.to(".sky .text",{
-     x: xMove
+     gsap.to(".sky",{
+     x: xMove,
      });
 
-     gsap.to(".bg .text",{
-     x: xMove*1.7
+     gsap.to(".bg",{
+     x: xMove * 1.7,
      });
 
     });  
+
   },[showContent]);
 
   return (
@@ -85,8 +132,8 @@ function App(){
       </svg>
     </div>
     {showContent && (
-      <div className="main w-full">
-        <div className="landing w-full h-screen bg-black">
+      <div className="main w-full rotate-[-10deg] scale-[1.7]">
+        <div className="landing overflow-hidden relative w-full h-screen bg-black">
           <div className="navbar absolute top-0 left-0 z-[10] w-full py-10 px-10 ">
             <div className="logo flex gap-7">
               <div className="lines flex flex-col gap-[3px]">
@@ -98,23 +145,23 @@ function App(){
             </div>
           </div>
           
-          <div className="imagesdiv relative overflow-hidden w-full h-screen">3
+          <div className="imagesdiv relative overflow-hidden w-full h-screen">
             <img
-             className="absolute sky scale-[1.2] top-0 left-0 w-full h-full object-cover" 
+             className="absolute sky scale-[1.5] rotate-[-20deg] top-0 left-0 w-full h-full object-cover" 
              src="./sky.png" alt="" />
 
             <img
-             className="absolute bg scale-[1.1] top-0 left-0  w-full h-full object-cover" 
+             className="absolute bg scale-[1.8] rotate-[-3deg] top-0 left-0  w-full h-full object-cover" 
              src="./bg.png" alt="" />
 
-            <div className="text text-white flex flex-col gap-2 absolute top-10 left-1/2 -translate-x-1/2">
+            <div className="text text-white flex flex-col gap-2 absolute top-10 left-1/2 -translate-x-1/2 scale-[1.4] rotate-[-10deg]">
               <h1 className="text-[7rem] leading-none -ml-40">grand</h1>
               <h1 className="text-[7rem] leading-none -ml-20">theft</h1>
               <h1 className="text-[7rem] leading-none -ml-40">auto</h1>
             </div> 
 
             <img 
-            className="absolute character -bottom-[60%] left-1/2 scale-[0.7] left-1/2 -translate-x-1/2" 
+            className="absolute character -bottom-[150%] left-1/2 scale-[0.7] rotate-[-20deg] left-1/2 -translate-x-1/2" 
             src="./girlbg.png" alt=""/>
 
           </div>
@@ -124,7 +171,34 @@ function App(){
               <h3 className="text-xl font-[Helvetica_Now_Display]">Scroll Down</h3>
             </div>
             <img className="absolute h-[40px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="./ps5.png" alt="" />
+         
           </div>
+        </div> 
+        <div className="w-full h-screen flex items-center justify-center bg-black">
+        <div className="cntnr flex text-white w-full h-[80%] ">
+        <div className="limg relative w-1/2 h-full">
+        <img className="absolute scale-[0.8] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="./imag.png" alt="" />
+        </div>
+        <div className="rg w-[30%]">
+          <h1 className="text-5xl">Still Runnig</h1>
+          <h1 className="text-5xl">Not Hunting</h1>
+          <p className="mt-8 text-3l font-[Helvetica_Now_Display]">
+           Grand Theft Auto VI (GTA 6) is Rockstar Games’ highly anticipated next entry in the open-world series, releasing in 2025 for PlayStation 5 and Xbox Series X|S. 
+           The game returns to Vice City, a vibrant, neon-soaked world filled with urban areas, beaches, swamps, and countryside.
+          </p>
+          <p className="mt-3 text-3l font-[Helvetica_Now_Display]">
+          For the first time in the franchise, GTA 6 introduces a female protagonist, Lucia, 
+          alongside her male partner, bringing a fresh twist to the story. Powered by Rockstar’s updated engine, 
+          the game features enhanced graphics, smarter NPCs, and immersive gameplay built around heists, chaos, and modern culture.
+
+          </p>
+          <p className="mt-5 text-3l font-[Helvetica_Now_Display]">
+           Players can expect a living, breathing world with evolving weather, realistic crowds, and new ways to interact with the environment. Rockstar has hinted at ongoing updates to keep the game fresh, raising excitement as fans worldwide count down to launch.
+            </p>
+            <button className="bg-yellow-500 px-4 py-4 text-xl text-black mt-5">Download Now</button>
+          
+        </div>
+        </div>
         </div>
       </div>
      )}

@@ -1,12 +1,96 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```markdown
+# 🎮 GTA 6 Landing Page (React + GSAP)
 
-Currently, two official plugins are available:
+An animated and responsive **Grand Theft Auto VI (GTA 6)** landing page built with **React** and **GSAP (GreenSock Animation Platform)**.  
+It delivers a cinematic introduction, smooth transitions, and Vice City–inspired visuals for showcasing Rockstar’s upcoming title.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
+- 🚀 **React + GSAP** animation for cinematic intro and smooth transitions  
+- 🎨 **Stylish Vice City aesthetic** with neon vibes  
+- 🖼️ Parallax effects on background, sky, and character layers  
+- 📱 Fully responsive layout for all devices  
+- 🕹️ Interactive hover and scroll animations  
+- 🖥️ Optimized React structure for scalability  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+```
+
+src/
+│── App.jsx          # Main landing page component with GSAP animations
+│── index.js         # React entry point
+│── assets/          # Images (sky, bg, character, ps5, logos, etc.)
+│── styles/          # Optional global CSS (if used)
+public/
+│── index.html       # App entry HTML
+
+````
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js v16+  
+- npm or yarn  
+
+### Installation
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/mehrabak/GTAVIbyMEHRAB.git
+````
+
+2. Navigate to the folder:
+
+   ```bash
+   cd GTAVIbyMEHRAB
+   ```
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+5. Open in browser:
+
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## 📸 Preview
+
+
+
+---
+
+## 🛠️ Built With
+
+* **React.js** – Component-based UI
+* **GSAP** – Powerful animations and timeline control
+* **TailwindCSS (utility classes)** – Styling system
+* **Remixicon** – Icons
+
+---
+
+
+## 📜 License
+
+This project is licensed under the MIT License – free to use and modify.
+
+---
+
+## 👨‍💻 Author
+
+Developed by Mehrab ❤️
+Inspired by Rockstar Games’ **Grand Theft Auto VI**.
+
