@@ -182,20 +182,20 @@ function App(){
         <div className="rg w-[30%]">
           <h1 className="text-5xl">Still Runnig</h1>
           <h1 className="text-5xl">Not Hunting</h1>
-          <p className="mt-8 text-3l font-[Helvetica_Now_Display]">
+          <p className="mt-5 text-2l font-[Helvetica_Now_Display]">
            Grand Theft Auto VI (GTA 6) is Rockstar Games’ highly anticipated next entry in the open-world series, releasing in 2025 for PlayStation 5 and Xbox Series X|S. 
-           The game returns to Vice City, a vibrant, neon-soaked world filled with urban areas, beaches, swamps, and countryside.
+           The game returns to Vice City, a vibrant, neon-soaked world, beaches, swamps, and countryside.
           </p>
-          <p className="mt-3 text-3l font-[Helvetica_Now_Display]">
-          For the first time in the franchise, GTA 6 introduces a female protagonist, Lucia, 
-          alongside her male partner, bringing a fresh twist to the story. Powered by Rockstar’s updated engine, 
+          <p className="mt-3 text-2l font-[Helvetica_Now_Display]">
+          For the first time , GTA 6 introduces a female protagonist, Lucia, 
+          alongside her male partner. Powered by Rockstar’s updated engine, 
           the game features enhanced graphics, smarter NPCs, and immersive gameplay built around heists, chaos, and modern culture.
 
           </p>
-          <p className="mt-5 text-3l font-[Helvetica_Now_Display]">
-           Players can expect a living, breathing world with evolving weather, realistic crowds, and new ways to interact with the environment. Rockstar has hinted at ongoing updates to keep the game fresh, raising excitement as fans worldwide count down to launch.
+          <p className="mt-3 text-2l font-[Helvetica_Now_Display]">
+           Rockstar has hinted at ongoing updates to keep the game fresh, raising excitement as fans worldwide count down to launch.
             </p>
-            <button className="bg-yellow-500 px-4 py-4 text-xl text-black mt-5">Download Now</button>
+            <button className="bg-yellow-500 px-4 py-4 text-xl text-black mt-3">Download Now</button>
           
         </div>
         </div>
