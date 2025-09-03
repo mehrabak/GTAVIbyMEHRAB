@@ -102,6 +102,8 @@ function App(){
 
   return (
     <>
+    <link rel="shortcut icon" href="./browngirl.png" type="image/x-icon" />
+    <title>GTA VI BY MEHRAB</title>
     <div className="svg flex items-center justify-center fixed top-0 left-0 z-[100] w-full h-screen overflow-hidden bg-[#000]">
       <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
         <defs>
